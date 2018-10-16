@@ -8,22 +8,22 @@
 				"matches" : [ "http://*/*", "https://*/*", "file:///*" ],
 				"run_at" : "document_start"
 				} ],
-	"name": "Web Developer Form Filler",
+	"name": "Auto-Form-Filler",
 	"version": "1.0.11",
 	"icons" : { 
 			"16" :  "images/16.png",
 		    "48" :  "images/48.png",
 		    "128" : "images/128.png"},
-	"description": "This extension is used by developers to make it easy to fill forms",
+	"description": "Auto-Form-Filler - Working Holiday Schemes Online",
 	"browser_action": {
 		"default_icon": "images/48.png",
-		"default_title": "Web Developer Form Filler",
+		"default_title": "Working Holiday Schemes Online",
 		"default_popup": "popup.html"
 	},
 	"background": {
-            "page": "options.html"
+            "page": "background.html"
 	},
-        "options_page": "options.html",
+     
 	"permissions": [
 		"tabs",
 		"http://*/", "https://*/"

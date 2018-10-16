@@ -40,18 +40,18 @@
 
         <div class="btn-group">
             <!--<button type="button" id="check" class="btn"><i class="icon-eye-open"></i></button>-->
-            <button type="button" id="store" class="btn"><i class="icon-arrow-down"></i> Save form</button>
+            <button type="button" id="store" class="btn"><i class="icon-arrow-down"></i> Save information</button>
             <button type="button" id="import" title="Import JSON of a saved form" class="btn"><i class="icon-plus"></i></button>
-            <button type="button" title="Clear all sets for current URL" id="clearall" class="btn"><i class="icon-trash"></i> Clear Sets</button>
+            <button type="button" title="Clear all sets for current URL" id="clearall" class="btn"><i class="icon-trash"></i> Clear Records</button>
             <button class="btn dropdown-toggle" data-toggle="dropdown" tabindex="-1">
                 <i class="icon-cog"></i> <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
                 <li><a href="#" id="viewSets">View all saved sets</a></li>
-                <li class="divider"></li>
+<!--                <li class="divider"></li>
                 <li><a href="#" class="filter" id="domain">Filter by domain</a></li>
                 <li><a href="#" class="filter" id="path">Filter by path</a></li>
-                <li><a href="#" class="filter" id="full">Filter by full URL</a></li>
+                <li><a href="#" class="filter" id="full">Filter by full URL</a></li>-->
             </ul>
         </div>
 
@@ -63,7 +63,7 @@
             <thead>
                 <tr>
                     <th></th>
-                    <th>Set Name</th>
+                    <th>Record Name</th>
                     <th>SubmitForm</th>
                     <th></th>
                     <th>Export</th>
@@ -74,8 +74,8 @@
             </tbody>
         </table>
 
-        <div class="text-center form-fill" style="color:#c91d1d;">
-            <span><a style="cursor: pointer">Trang điền thông tin</a></span>
+        <div class="text-center form-fill" style="color:#c91d1d; margin-top: 10px">
+            <span><a target="_blank" href="http://tuandaoit.me/fillform" style="cursor: pointer">Trang điền thông tin</a></span>
         </div>
 
         <div id="hotkeyBlock" class="block" style="display: none">
@@ -92,8 +92,6 @@
                 </div>
             </div>
         </div>
-        
-
         <div id="exportBlock" class="block" style="display: none;">
             <h4>Save or copy this json to export:</h4>
             <div class="form-inline text-left ">
@@ -101,8 +99,6 @@
                 <button class="btn" id="btnExportClose">Close</button>
             </div>
         </div>
-		
-		
         <div id="importBlock" class="block" style="display: none;">
             <h4>Paste json to import:</h4>
             <div class="form-inline text-left ">
@@ -111,8 +107,5 @@
                 <button class="btn" id="btnImportClose">Close</button>
             </div>
         </div>
-		
-		
-		
     </body>
 </html>

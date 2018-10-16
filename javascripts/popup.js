@@ -148,6 +148,7 @@ chrome.tabs.query({ 'active': true, 'currentWindow': true }, function (tab) {
 });
 
 $(document).ready(function () {
+    
     setCurrentFilter();
     
     $('.donatelink').click(function () {
@@ -157,6 +158,10 @@ $(document).ready(function () {
     $("#check").click(function () {
         
     });
+    
+    // Custom
+    $('#sets').addClass('allsets');
+    refreshSetsList();
     
     $("#viewSets").click(function () {
         $('#sets').addClass('allsets');
@@ -215,9 +220,9 @@ $(document).ready(function () {
         refreshSetsList(tab_url);
     });
 
-    $('.form-fill').click(function () {
-        window.open(chrome.runtime.getURL('fill_form.html'));
-    });
+//    $('.form-fill').click(function () {
+//        window.open(chrome.runtime.getURL('fill_form.html'));
+//    });
 
     $("#store").click(function () {
         sendMessage({ "action": 'store' }, function readResponse(obj) {
