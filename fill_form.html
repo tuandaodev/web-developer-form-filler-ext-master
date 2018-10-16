@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+    <title>Auto Filler - Options</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div id="sidedrawer" class="mui--no-user-select">
+    <div id="sidedrawer-brand" class="mui--appbar-line-height">
+        <span class="mui--text-title">Auto Filler</span>
+    </div>
+    <div class="mui-divider"></div>
+    <ul>
+        <li class="active" data-open-panel="settings">
+            <strong>Settings</strong>
+        </li>
+
+        <li data-open-panel="rules">
+            <strong>Rules</strong>
+        </li>
+    </ul>
+</div>
+<header id="header">
+    <div class="mui-appbar mui--appbar-line-height">
+        <div class="mui-container-fluid">
+            <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+            <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+        </div>
+    </div>
+</header>
+<div id="content-wrapper">
+    <aside class="form_main">
+        <h2 class="title">Personal details</h2>
+        <p class="description">You should complete all of the pages in this section before proceeding to the next section. The information about you is collected to determine your eligibility for a work visa under a Working Holiday Scheme.</p>
+        <table width="100%">
+            <tbody><tr>
+                <td class="title">Family name (as in passport)<span class="bind_alert bind_red">!</span></td>
+                <td class="input"><input id="family_name" name="family_name" type="text"></td>
+            </tr>
+            <tr>
+                <td class="title">Given name 1 (as in passport)<span class="bind_alert bind_red">!</span></td>
+                <td class="input"><input id="given_name" name="given_name" type="text"></td>
+            </tr>
+            <tr>
+                <td class="title">Given name 2 (as in passport)<span class="bind_alert bind_none">!</span></td>
+                <td class="input"><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="title">Given name 3 (as in passport)<span class="bind_alert bind_none">!</span></td>
+                <td class="input"><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="title">Any other names you are or have ever been known by<span class="bind_alert bind_none">!</span></td>
+                <td class="input"><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="title">Preferred title<span class="bind_alert bind_none">!</span></td>
+                <td class="input select_box">
+                    <select autocomplete="off">
+                        <option value="" selected="selected">Select an Option</option>
+                        <option value="" disabled="disabled">---</option>
+                        <option value="Preferred title">Mr</option>
+                        <option value="Other">Mrs</option>
+                        <option value="Gender">Miss</option>
+                        <option value="Date of birth">Dr</option>
+                        <option value="Country of brith">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="title">Other (please specify)<span class="bind_alert bind_none">!</span></td>
+                <td class="input"><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="title">Gender<span class="bind_alert bind_red">!</span></td>
+                <td class="input select_box">
+                    <select id="gender" name="gender" autocomplete="off">
+                        <option value="" selected="selected">Select an Option</option>
+                        <option value="" disabled="disabled">---</option>
+                        <option value="Gender">Male</option>
+                        <option value="Date of birth">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="title">Date of birth<span class="bind_alert bind_red">!</span></td>
+                <td class="input">
+                                                        <script>
+                    $( function() {
+                                                                $( "#date_of_birth" ).datepicker({
+                                                                        changeMonth: true,
+                                                                        changeYear: true,
+                                                                        yearRange: '-80:+80'
+                                                                });
+                    } );
+                    </script>
+                        <input type="text" id="date_of_birth" name="date_of_birth" autocomplete="off" class="hasDatepicker">
+                </td>
+            </tr>
+            <tr>
+                <td class="title">Country of birth<span class="bind_alert bind_red">!</span></td>
+                <td class="input select_box">
+                    <select id="country_of_birth" name="country_of_birth" autocomplete="off">
+                        <option value="" selected="selected">Select an Option</option>
+                        <option value="" disabled="disabled">---</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="American Samoa">American Samoa</option>
+                        <option value="Andora">United Kingdom</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Afghanistan">Antigua and Barbuda</option>
+                        <option value="Albania">Austria</option>
+                        <option value="Algeria">Saudi Arabia</option>
+                        <option value="VietNam">VietNam</option>
+                        <option value="Andora">Bahrain</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody></table>
+        <h2 class="title">Address</h2>
+        <div class="alert_flag"><span style="float:left;"><img width="30" src="http://formmau.whvnz.com//templates/front/images/media.png"></span><p>Important - If you are currently in New Zealand you MUST state a New Zealand address. If you are overseas you MUST state an overseas address.</p></div>
+        <table width="100%">
+            <tbody><tr>
+                <td class="title">Street Number<span class="bind_alert bind_none">!</span></td>
+                <td class="input"><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="title">Street Name<span class="bind_alert bind_red">!</span></td>
+                <td class="input"><input id="street_name" name="street_name" type="text"></td>
+            </tr>
+            <tr>
+                <td class="title">Suburb<span class="bind_alert bind_red">!</span></td>
+                <td class="input"><input id="suburb" name="suburb" type="text"></td>
+            </tr>
+            <tr>
+                <td class="title">City<span class="bind_alert bind_red">!</span></td>
+                <td class="input"><input id="city" name="city" type="text"></td>
+            </tr>
+            <tr>
+                <td class="title">Province/ State<span class="bind_alert bind_none">!</span></td>
+                <td class="input"><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="title">PIN/ ZIP code<span class="bind_alert bind_none">!</span></td>
+                <td class="input"><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="title">Country<span class="bind_alert bind_red">!</span></td>
+                <td class="input select_box">
+                    <select id="country" name="country" autocomplete="off">
+                        <option value="" selected="selected">Select an Option</option>
+                        <option value="" disabled="disabled">---</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="American Samoa">American Samoa</option>
+                        <option value="Andora">United Kingdom</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Afghanistan">Antigua and Barbuda</option>
+                        <option value="Albania">Austria</option>
+                        <option value="Algeria">Saudi Arabia</option>
+                        <option value="VietNam">VietNam</option>
+                        <option value="Andora">Bahrain</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody></table>
+
+        <h2 class="title">Contact Details</h2>
+        <p class="description">(Please provide the telephone numbers at which you can be contacted)</p>
+
+        <table width="100%">
+            <tbody><tr>
+                <td class="title">Phone (daytime)<span class="bind_alert bind_none">!</span></td>
+                <td class="input"><input type="text"><span class="note">(CountryCode AreaCode TelephoneNumber e.g 64 4 1234567)</span></td>
+            </tr>
+            <tr>
+                <td class="title">Phone (night)<span class="bind_alert bind_none">!</span></td>
+                <td class="input"><input type="text"><span class="note">(CountryCode AreaCode TelephoneNumber e.g 64 4 1234567)</span></td>
+            </tr>
+            <tr>
+                <td class="title">Phone (mobile)<span class="bind_alert bind_none">!</span></td>
+                <td class="input"><input type="text"><span class="note">(CountryCode AreaCode TelephoneNumber e.g 64 4 1234567)</span></td>
+            </tr>
+            <tr>
+                <td class="title">Fax<span class="bind_alert bind_none">!</span></td>
+                <td class="input"><input type="text"><span class="note"></span></td>
+            </tr>
+            <tr>
+                <td class="title">Email address (this address will be used to contact you about this application).<span class="bind_alert bind_red">!</span></td>
+                <td class="input"><input id="email_address" name="email_address" type="text"></td>
+            </tr>
+            <tr>
+                <td class="title">Are you represent by an <span style="font-style:italic;text-decoration:underline;">immigration adviser?</span><span class="bind_alert bind_red">!</span></td>
+                <td class="input select_box">
+                    <select id="immigration" name="immigration" autocomplete="off">
+                        <option value="" selected="selected">Select an Option</option>
+                        <option value="" disabled="disabled">---</option>
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="title">Communication method<span class="bind_alert bind_none">!</span></td>
+                <td class="input select_box">
+                    <select autocomplete="off">
+                        <option selected="selected">Select an Option</option>
+                        <option disabled="disabled">---</option>
+                        <option>Email</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="title">Do you have a Visa or MasterCard card avaiable for payment ?<span class="bind_alert bind_red">!</span></td>
+                <td class="input select_box">
+                    <select id="payment" name="payment" autocomplete="off">
+                        <option value="" selected="selected">Select an Option</option>
+                        <option value="" disabled="disabled">---</option>
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+
+                    </select>
+                </td>
+            </tr>
+
+        </tbody></table>
+        <div class="alert_flag"><span style="float:left;"><img width="30" src="http://formmau.whvnz.com//templates/front/images/media.png"></span><p>Important - Please check the information you have entered carefully to ensure it is correct before going to the next section.</p></div>
+    </aside>
+</div>
+</body>
+</html>
