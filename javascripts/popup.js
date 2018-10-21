@@ -301,9 +301,10 @@ $(document).ready(function () {
             }
 
             var oldQuery = getValue(tr, 'submitQuery');
-            oldQuery = oldQuery ? oldQuery : 'input[type=submit]';
+//            oldQuery = oldQuery ? oldQuery : 'input[type=submit]';
+            oldQuery = oldQuery ? oldQuery : '.button-next';
 
-            var query = prompt('Enter jquery selector for submit button to auto click', oldQuery);
+            var query = prompt('Enter jquery selector for submit button to auto click, keep default if you don\'t want to modify process.', oldQuery);
             if (query) {
                 saveValue(tr, 'submitQuery', query);
                 saveValue(tr, 'autoSubmit', true);

@@ -6,7 +6,7 @@
 					"javascripts/content_script.js", 
 					"javascripts/mousetrap.min.js" ],
 				"matches" : [ "http://*/*", "https://*/*", "file:///*" ],
-				"run_at" : "document_start"
+				"run_at" : "document_end"
 				} ],
 	"name": "Auto-Form-Filler",
 	"version": "1.0.11",
